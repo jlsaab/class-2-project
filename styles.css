@@ -1,61 +1,98 @@
 body {
-    background: #aaa;
-    padding: 20px;
-    font-family: Galvji;
-  }
-  
-  .container {
-    width: 100%;
-    display: flex;
-  }
-  
-  
-  .column {
-    flex: 50%;
-  }
-  
-  
-  #column-right {
-    background-color: rgb(0, 32, 100);
-    background-size: cover;
-    text-align: center;
-    padding-top: 30px;
-    border-radius: 60px;
-    color: white;
-    border: 2px solid black;
-  }
-  
-  .title {
-    background: #fff;
-    border-radius: 60px;
-    padding: 20px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto;
-    width: 300px;
-    border: 10px solid #aaa;
-  }
-  
-  .small {
-    font-size: 10px;
-    font-weight: normal;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 60px;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto;
-    width: 300px;
-    border: 10px solid #aaa;
-   }
-  
-  .card:hover {
-    background: lightgreen;
-    cursor: pointer;
-  }
-  
+  background: #aaa;
+  padding: 20px;
+  font-family: Galvji;
+}
+
+.header {
+  background-image: url(https://www.adorama.com/alc/wp-content/uploads/2017/11/shutterstock_114802408.jpg);
+  background-color: #255425;
+  width: 100%;
+  display: flex;
+  box-shadow: inset 0 0 0 1000px rgba(37, 49, 84, 0.7);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  overflow: hidden;
+  height: 250px;
+  background-size: cover;
+  background-position: center 46%;
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Code for header and header-text sampled from classmate Henry Kanengiser */
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+#column-right {
+  visibility: visible;
+  background-color: rgba(37, 49, 84, 0.7);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0px 20px;
+  border-radius: 60px;
+  color: white;
+  border: 2px solid black;
+  height: auto;
+  display: block;
+}
+
+.active {
+  visibility: hidden;
+}
+
+.small {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+button {
+  background: #fff;
+  border-radius: 60px;
+  margin: 0 auto;
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  display: grid;
+  cursor: pointer;
+}
+
+button:hover {
+  background: lightgreen;
+  width: 300px;
+}
+
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -14px;
+  top: -8px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
+}
