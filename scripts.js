@@ -1,8 +1,8 @@
-// $('button').click(function () {
-//     $('#column-right').updateClass(".active").fadeToggle();
-// })
+// hiding my right column upon loading
 $('#column-right').hide()
 
+
+// making my buttons clickable and loading in images and text
 $('button').on('click', function () {
     var place = $(this).data('place')
 
@@ -40,4 +40,10 @@ $('button').on('click', function () {
         $('#column-right').css('background-image', 'url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iU.dprk0DbdQ/v1/-1x-1.jpg")')
         $('#column-right').text('Bushwick, Brooklyn')
     }
+})
+
+
+// making my reset button functional
+$('.reset').click(function() {
+    location.reload()
 })
